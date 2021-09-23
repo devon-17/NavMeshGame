@@ -11,19 +11,19 @@ C:\Program Files\Unity 2021.1.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Junior/Game & Sim/NavMesh
+D:/Junior/Game & Sim/NavMesh Git/NavMeshGame/NavMesh
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59511
-Successfully changed project path to: D:/Junior/Game & Sim/NavMesh
-D:/Junior/Game & Sim/NavMesh
+58921
+Successfully changed project path to: D:/Junior/Game & Sim/NavMesh Git/NavMeshGame/NavMesh
+D:/Junior/Game & Sim/NavMesh Git/NavMeshGame/NavMesh
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 69.05 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 74.98 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Junior/Game & Sim/NavMesh/Assets
+[Subsystems] Discovering subsystems at path D:/Junior/Game & Sim/NavMesh Git/NavMeshGame/NavMesh/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,123 +35,204 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001968 seconds.
+Registered in 0.001638 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.59 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 76.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.238 seconds
+- Completed reload, in  1.232 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001963 seconds.
+Registered in 0.002215 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.863 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2824 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 103.0 MB.
-System memory in use after: 103.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3280.
-Total: 1.805200 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.129800 ms MarkObjects: 1.416900 ms  DeleteObjects: 0.049600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f010db9926f44da7f8b991b846958e') in 0.068424 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002929 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.821 seconds
+- Completed reload, in  1.247 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.1 MB.
+System memory in use after: 103.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3280.
+Total: 1.792400 ms (FindLiveObjects: 0.207800 ms CreateObjectMapping: 0.129400 ms MarkObjects: 1.401000 ms  DeleteObjects: 0.053300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Project/Scripts/GameSceneController.cs
+  artifactKey: Guid(7d67fdbaf29ef403fb3b972fea6c320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Scripts/GameSceneController.cs using Guid(7d67fdbaf29ef403fb3b972fea6c320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0b6ba083d461a4226a7947ad8540ae') in 0.129533 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001973 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.996 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2815 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 102.6 MB.
 System memory in use after: 102.8 MB.
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3283.
-Total: 1.731800 ms (FindLiveObjects: 0.203500 ms CreateObjectMapping: 0.119700 ms MarkObjects: 1.390500 ms  DeleteObjects: 0.016500 ms)
+Total: 2.002900 ms (FindLiveObjects: 0.219700 ms CreateObjectMapping: 0.138900 ms MarkObjects: 1.622200 ms  DeleteObjects: 0.020700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 446.892736 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/Textures/alien.png
-  artifactKey: Guid(93f3cba1a974c544594f3575d83bfdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/Textures/alien.png using Guid(93f3cba1a974c544594f3575d83bfdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64697177dcb36873250711bc50ebe118') in 0.316286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/Textures/astronaut.png
-  artifactKey: Guid(80700f27ff3a95440937e4d10c8016d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/Textures/astronaut.png using Guid(80700f27ff3a95440937e4d10c8016d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2121432952cbda234d5ab5bf8a6750') in 0.149937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/Textures/net.png
-  artifactKey: Guid(233faf59f7b72b64888f6732538a52ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/Textures/net.png using Guid(233faf59f7b72b64888f6732538a52ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1ed989a734270bd1095aae51758a8e') in 0.100572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.829233 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/stairs.fbx
-  artifactKey: Guid(412fd7cb03c1f3c42923ee6f57137e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/stairs.fbx using Guid(412fd7cb03c1f3c42923ee6f57137e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e250399594db0ceb0d1a87c7328647c') in 0.247323 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.670499 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/stairsLong.fbx
-  artifactKey: Guid(4244d48b4b7c5c6499e884286bcf6cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/stairsLong.fbx using Guid(4244d48b4b7c5c6499e884286bcf6cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516ad75a38b1ab675864a72102002faf') in 0.131917 seconds 
+  Time since last request: 373.819519 seconds.
+  path: Assets/Project/Prefabs/Player.prefab
+  artifactKey: Guid(4b45c6dc955d1fb4e95ae7ad5c057d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Prefabs/Player.prefab using Guid(4b45c6dc955d1fb4e95ae7ad5c057d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b203df00ea769530d3db444d3e45a46') in 0.241217 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000275 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/stationLarge.fbx
-  artifactKey: Guid(e4964c9b65913c44092202a7bd16c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/stationLarge.fbx using Guid(e4964c9b65913c44092202a7bd16c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e3b2bb4e0daf86ecd0e122982446a7') in 0.124077 seconds 
+  path: Assets/Project/Prefabs/PopUpMenu.prefab
+  artifactKey: Guid(e3e82cb2e39916f4fa6d2eb2adc766c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Prefabs/PopUpMenu.prefab using Guid(e3e82cb2e39916f4fa6d2eb2adc766c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22238e768817f7d85e4150f54280f5dc') in 0.084803 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Kenney Assets/Space Kit/Models/station.fbx
-  artifactKey: Guid(129db778615f52f4987a4be6a1dd86b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kenney Assets/Space Kit/Models/station.fbx using Guid(129db778615f52f4987a4be6a1dd86b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2100b2617844d50933e76fbcc32454ac') in 0.131241 seconds 
+  Time since last request: 5.583571 seconds.
+  path: Assets/Scenes/Tutorial.unity
+  artifactKey: Guid(e97ccf7cc8f9d439b88dfd830bcb7d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tutorial.unity using Guid(e97ccf7cc8f9d439b88dfd830bcb7d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9edbb9a9e7eca0193be458c66d69f8') in 0.081186 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1124.223079 seconds.
-  path: Assets/Scenes/MapTwo/NavMesh.asset
-  artifactKey: Guid(f0ed7fcaa8872c545b601566426f13b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MapTwo/NavMesh.asset using Guid(f0ed7fcaa8872c545b601566426f13b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913a67adde03fc71e1a3f41aeece63e9') in 0.073201 seconds 
+  Time since last request: 42.969261 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3ab66bea792a90bb687c29c43077ee') in 0.080779 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.951955 seconds.
-  path: Assets/Scenes/MapOne/NavMesh.asset
-  artifactKey: Guid(9a4a7030c8c7e0641beb27c0a951c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MapOne/NavMesh.asset using Guid(9a4a7030c8c7e0641beb27c0a951c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea9efa6c5c69a142dc93bc6d1a8403d') in 0.052553 seconds 
+  Time since last request: 53.648351 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1703f911161d72fe9d9538698226f9') in 0.074367 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002148 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.4 MB.
+System memory in use after: 106.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3293.
+Total: 1.778200 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.127800 ms MarkObjects: 1.413100 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.952340 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb7c4edee14b37af865cf2f9aff79da') in 0.066918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.977893 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(26f15ca1584386649827049c4d9f5bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08728c98c28cdba5efb442b39862c05c') in 0.107507 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002044 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.999 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.4 MB.
+System memory in use after: 106.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3296.
+Total: 2.114000 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.144700 ms MarkObjects: 1.723600 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.229405 seconds.
+  path: Assets/Project/Animations/Spaceship Anim.controller
+  artifactKey: Guid(e27e1d2f24bb237458afd37518de1204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/Spaceship Anim.controller using Guid(e27e1d2f24bb237458afd37518de1204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff604765d2cba2ad36094ad651c24f1') in 0.062135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.095295 seconds.
+  path: Assets/Project/Animations/Player.controller
+  artifactKey: Guid(99aa7583e9c9ed94981f213c6800d83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/Player.controller using Guid(99aa7583e9c9ed94981f213c6800d83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d166f94f337b2bf5e0cdc480679c5f9') in 0.086241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.623515 seconds.
+  path: Assets/Project/Animations/Spin.anim
+  artifactKey: Guid(12e05f240aeab48408201e4c94dafc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/Spin.anim using Guid(12e05f240aeab48408201e4c94dafc59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67997037325cef2f20a7ff708bd2fd3a') in 0.050267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.116361 seconds.
+  path: Assets/Project/Animations/CameraMenuMove.anim
+  artifactKey: Guid(51ac69a9d82efe34bac1b5fc3604042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/CameraMenuMove.anim using Guid(51ac69a9d82efe34bac1b5fc3604042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81504e19a5f1f4102584a3d4dffb1b2') in 0.070738 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002012 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Junior\Game & Sim\NavMesh Git\NavMeshGame\NavMesh\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.987 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 106.4 MB.
+System memory in use after: 106.7 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3299.
+Total: 1.715500 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.126900 ms MarkObjects: 1.373900 ms  DeleteObjects: 0.012200 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
