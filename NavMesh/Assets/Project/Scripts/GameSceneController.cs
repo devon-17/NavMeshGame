@@ -15,6 +15,7 @@ public class GameSceneController : MonoBehaviour {
 	public string startingText;
 	private IEnumerator coroutine;
 	public GameObject skyCam;
+	
 
 	// Use this for initialization
 	void Start () {
