@@ -18,10 +18,15 @@ public class Player : MonoBehaviour
 	private int minerals;
 	public int Minerals { get { return minerals; } }
 
-	[Header("Prefab Instantiate Stats")]
+	[Header("Satellite Instantiate Stats")]
 	public GameObject satellite;
 	public int satelliteNeeded;
 	public int satelliteMineralsNeeded;
+
+	[Header("Portal Instantiate Stats")]
+	public GameObject portal;
+	public int portalNeeded;
+	public int portalMineralsNeded;
 
 	
 
@@ -47,6 +52,8 @@ public class Player : MonoBehaviour
 		// Make the mining timer work.
 		miningTimer -= Time.deltaTime;  
 
+
+		// satellite instantiate
 		if(minerals >= satelliteMineralsNeeded) // if we have more minerals than needed for satellites
 		{
 			if (Input.GetKeyDown(KeyCode.F) && satelliteNeeded != 0) // if f clicked and minerals needed is more than 0
@@ -61,6 +68,23 @@ public class Player : MonoBehaviour
 				}
 			}
 		}
+
+
+		// portal instantiate
+		if(minerals >= portalMineralsNeded)
+		{
+			if (Input.GetKeyDown(KeyCode.E) && portalNeeded != 0)
+			{
+				Instantiate(portal, transform.position, Quaternion.identity);
+				portalNeeded --;
+				minerals -= portalMineralsNeded;
+
+				if (portalNeeded <= 0)
+				{
+					portalNeeded = 0;
+				}
+			}
+		}
 		
 	}
 
@@ -70,7 +94,7 @@ public class Player : MonoBehaviour
 		{
 				Station station = other.gameObject.GetComponent<Station> ();
 
-			if (!station.IsActive && minerals >= station.requiredMinerals && satelliteNeeded <= 0) 
+			if (!station.IsActive && minerals >= station.requiredMinerals && satelliteNeeded <= 0 && portalNeeded <= 0) 
 			{
 				minerals -= station.requiredMinerals;
 				station.Activate ();

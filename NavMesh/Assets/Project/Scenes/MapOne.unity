@@ -1190,6 +1190,9 @@ MonoBehaviour:
     type: 3}
   satelliteNeeded: 2
   satelliteMineralsNeeded: 10
+  portal: {fileID: 3896768146503571378, guid: 2802dfe2a1b2f82488602f16b537ba62, type: 3}
+  portalNeeded: 0
+  portalMineralsNeded: 0
 --- !u!195 &347921487
 NavMeshAgent:
   m_ObjectHideFlags: 0
