@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
 {  
+
+    [SerializeField] GameObject errorText;
     
+    void Start(){
+        errorText.SetActive(false);
+    }
+
     public void Tutorial(){
         SceneManager.LoadScene("Tutorial");
         Debug.Log("Tutorial Level");
@@ -48,8 +54,15 @@ public class SceneTransitions : MonoBehaviour
         } 
         else
         {
+            StartCoroutine(ErrorPopUp());
             return;
         }
         
+    }
+
+    private IEnumerator ErrorPopUp(){
+        errorText.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        errorText.SetActive(false);
     }
 }

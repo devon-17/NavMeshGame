@@ -15,7 +15,6 @@ public class GameSceneController : MonoBehaviour {
 	public string startingText;
 	private IEnumerator coroutine;
 	public GameObject skyCam;
-	public bool isCoroutineRunning;
 	
 
 	// Use this for initialization
@@ -48,8 +47,6 @@ public class GameSceneController : MonoBehaviour {
 	}
 
 	public IEnumerator TutorialRoutine () {
-
-		isCoroutineRunning = true;
 		// starting text
 		messageText.text = startingText;
 		// first move
@@ -74,7 +71,6 @@ public class GameSceneController : MonoBehaviour {
 		yield return new WaitForSeconds(2f);
 		messageText.text = "";
 
-		isCoroutineRunning = false;
 	}
 
 }
