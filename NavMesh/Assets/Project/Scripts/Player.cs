@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
 		// portal instantiate
 		if(minerals >= portalMineralsNeded)
 		{
-			if (Input.GetKeyDown(KeyCode.E) && portalNeeded != 0)
+			if (Input.GetKeyDown(KeyCode.E) && portalNeeded != 0 && satelliteNeeded <= 0)
 			{
 				Instantiate(portal, transform.position, Quaternion.identity);
 				portalNeeded --;

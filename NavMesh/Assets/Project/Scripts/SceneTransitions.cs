@@ -4,27 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+{  
+    
     public void Tutorial(){
         SceneManager.LoadScene("Tutorial");
         Debug.Log("Tutorial Level");
-    }
-
-    public void Quit(){
-        Application.Quit();
-        Debug.Log("Quit game");
     }
 
     public void Menu(){
@@ -44,5 +28,28 @@ public class SceneTransitions : MonoBehaviour
 
     public void MapFour(){
         SceneManager.LoadScene("MapFour");
+    }
+
+    public void SaveQuit(){
+        PlayerPrefs.SetInt("LoadSaved", 1);
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Menu");
+    }
+    public void Quit(){
+        Application.Quit();
+        Debug.Log("Quit Game");
+    }
+
+    public void LoadGame(){
+
+        if(PlayerPrefs.GetInt("LoadSaved") == 1)
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        } 
+        else
+        {
+            return;
+        }
+        
     }
 }
