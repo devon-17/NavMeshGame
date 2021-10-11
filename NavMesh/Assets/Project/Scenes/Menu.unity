@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1444,6 +1444,11 @@ PrefabInstance:
       propertyPath: satelliteMineralsNeeded
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6283380180280567013, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6283380180280567014, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c,
         type: 3}
       propertyPath: m_Name
@@ -1504,7 +1509,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6283380180280567012, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c, type: 3}
+    - {fileID: 6283380180280567013, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c, type: 3}
+    - {fileID: 6283380180280567035, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c, type: 3}
+    - {fileID: 6283380180280567034, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c, type: 3}
 --- !u!1 &578459376
 GameObject:

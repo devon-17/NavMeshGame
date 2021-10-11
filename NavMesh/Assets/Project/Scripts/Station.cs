@@ -16,13 +16,15 @@ public class Station : MonoBehaviour
 	public GameObject popUpMenu;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		active = false;
 		ChangeTransparency (0.3f);	
 		popUpMenu.SetActive(false);
 	}
 	
-	public void Activate () {
+	public void Activate () 
+	{
 		active = true;
 		ChangeTransparency (1.0f);
 
