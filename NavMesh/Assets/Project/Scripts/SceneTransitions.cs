@@ -4,13 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
-{  
-
-    [SerializeField] GameObject errorText;
-    
-    void Start(){
-        errorText.SetActive(false);
-    }
+{   
 
     public void Tutorial(){
         SceneManager.LoadScene("Tutorial");
@@ -36,7 +30,8 @@ public class SceneTransitions : MonoBehaviour
         SceneManager.LoadScene("MapFour");
     }
 
-    public void SaveQuit(){
+    public void SaveQuit()
+    {
         PlayerPrefs.SetInt("LoadSaved", 1);
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Menu");
@@ -44,25 +39,5 @@ public class SceneTransitions : MonoBehaviour
     public void Quit(){
         Application.Quit();
         Debug.Log("Quit Game");
-    }
-
-    public void LoadGame(){
-
-        if(PlayerPrefs.GetInt("LoadSaved") == 1)
-        {
-            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
-        } 
-        else
-        {
-            StartCoroutine(ErrorPopUp());
-            return;
-        }
-        
-    }
-
-    private IEnumerator ErrorPopUp(){
-        errorText.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        errorText.SetActive(false);
     }
 }

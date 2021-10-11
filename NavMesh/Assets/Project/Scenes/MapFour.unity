@@ -1850,11 +1850,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 343760564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 699621721433dbe429fb025ec1257b5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 59e140cc8fad840deb34de30da03d799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   requiredMinerals: 10
   active: 0
+  popUpMenu: {fileID: 877713385}
 --- !u!1 &345037692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,7 +6869,7 @@ PrefabInstance:
     - target: {fileID: 8007079180272765656, guid: e3e82cb2e39916f4fa6d2eb2adc766c6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8007079180272765732, guid: e3e82cb2e39916f4fa6d2eb2adc766c6,
         type: 3}
@@ -7020,7 +7021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e6b4ba6af0cd24f8675a1dab790450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorText: {fileID: 0}
 --- !u!1001 &878207754
 PrefabInstance:
   m_ObjectHideFlags: 0
