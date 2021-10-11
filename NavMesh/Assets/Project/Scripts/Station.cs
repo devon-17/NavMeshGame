@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Station : MonoBehaviour 
+public class MapFourStation : MonoBehaviour 
 {
 	[Header("Minerals")]
 	public int requiredMinerals = 10;
@@ -12,29 +12,19 @@ public class Station : MonoBehaviour
 	public bool active;
 	public bool IsActive { get { return active; } }
 
-	public GameObject popUp;
-
 	// Use this for initialization
 	void Start () {
 		active = false;
 		ChangeTransparency (0.3f);
-
-		if (active == false)
-		{
-			popUp.SetActive(false);
-		}
-		
 	}
 	
 	public void Activate () {
 		active = true;
 		ChangeTransparency (1.0f);
-
-		Debug.Log("Transparency Changed");
-
-		if (active == true)
+		
+		if(gameObject.tag == "FourStation")
 		{
-			popUp.SetActive(true);
+			SceneManager.LoadScene("Game Over");
 		}
 	}
 

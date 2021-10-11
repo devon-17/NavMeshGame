@@ -15,10 +15,7 @@ public class Station : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		active = false;
-		ChangeTransparency (0.3f);
-
-        
-		
+		ChangeTransparency (0.3f);	
 	}
 	
 	public void Activate () {
@@ -27,7 +24,10 @@ public class Station : MonoBehaviour
 
 		Debug.Log("Transparency Changed");
 
-        SceneManager.LoadScene("Game Over");
+        if(gameObject.tag == "FourStation")
+		{
+			SceneManager.LoadScene("Game Over");
+		}
 	}
 
 	void ChangeTransparency (float value) 

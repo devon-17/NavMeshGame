@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StationOne
   - StationTwo
+  - FourStation
   layers:
   - Default
   - TransparentFX

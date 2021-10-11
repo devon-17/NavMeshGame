@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1772,6 +1772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Station
       objectReference: {fileID: 0}
+    - target: {fileID: 82571839857323982, guid: 852f86f021744c146b83e7c23851e091,
+        type: 3}
+      propertyPath: m_TagString
+      value: FourStation
+      objectReference: {fileID: 0}
     - target: {fileID: 82571839857323983, guid: 852f86f021744c146b83e7c23851e091,
         type: 3}
       propertyPath: m_RootOrder
@@ -1827,8 +1832,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82571839857323981, guid: 852f86f021744c146b83e7c23851e091, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 852f86f021744c146b83e7c23851e091, type: 3}
+--- !u!1 &343760564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 82571839857323982, guid: 852f86f021744c146b83e7c23851e091,
+    type: 3}
+  m_PrefabInstance: {fileID: 343760563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &343760565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343760564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699621721433dbe429fb025ec1257b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredMinerals: 10
+  active: 0
 --- !u!1 &345037692
 GameObject:
   m_ObjectHideFlags: 0
