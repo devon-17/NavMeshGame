@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/MapFour.unity
     guid: 065686e4ce865404e933f88a1f986d8d
+  - enabled: 1
+    path: Assets/Project/Scenes/Game Over.unity
+    guid: 062121f5e93892641a07d56c7ecaef1a
   m_configObjects: {}
