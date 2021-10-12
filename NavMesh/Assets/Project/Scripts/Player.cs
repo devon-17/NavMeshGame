@@ -53,38 +53,7 @@ public class Player : MonoBehaviour
 		miningTimer -= Time.deltaTime;  
 
 
-		// satellite instantiate
-		if(minerals >= satelliteMineralsNeeded) // if we have more minerals than needed for satellites
-		{
-			if (Input.GetKeyDown(KeyCode.F) && satelliteNeeded != 0) // if f clicked and minerals needed is more than 0
-			{
-				Instantiate(satellite, transform.position, Quaternion.identity); // instantiating satellite at the players position
-				satelliteNeeded --;
-				minerals -= satelliteMineralsNeeded;
-				
-				if(satelliteNeeded <= 0)
-				{
-					satelliteNeeded = 0;
-				}
-			}
-		}
-
-
-		// portal instantiate
-		if(minerals >= portalMineralsNeded)
-		{
-			if (Input.GetKeyDown(KeyCode.E) && portalNeeded != 0 && satelliteNeeded <= 0)
-			{
-				Instantiate(portal, transform.position, Quaternion.identity);
-				portalNeeded --;
-				minerals -= portalMineralsNeded;
-
-				if (portalNeeded <= 0)
-				{
-					portalNeeded = 0;
-				}
-			}
-		}
+		
 		
 	}
 
@@ -115,6 +84,45 @@ public class Player : MonoBehaviour
 			}
 		}
 		*/
+
+
+		
+
+		if (other.tag == "Pad")
+		{
+			// satellite instantiate
+		if(minerals >= satelliteMineralsNeeded) // if we have more minerals than needed for satellites
+		{
+			if (Input.GetKeyDown(KeyCode.F) && satelliteNeeded != 0) // if f clicked and minerals needed is more than 0
+			{
+				Instantiate(satellite, transform.position, Quaternion.identity); // instantiating satellite at the players position
+				satelliteNeeded --;
+				minerals -= satelliteMineralsNeeded;
+				
+				if(satelliteNeeded <= 0)
+				{
+					satelliteNeeded = 0;
+				}
+			}
+		}
+
+		// portal instantiate
+		if(minerals >= portalMineralsNeded)
+		{
+			if (Input.GetKeyDown(KeyCode.E) && portalNeeded != 0 && satelliteNeeded <= 0)
+			{
+				Instantiate(portal, transform.position, Quaternion.identity);
+				portalNeeded --;
+				minerals -= portalMineralsNeded;
+
+				if (portalNeeded <= 0)
+				{
+					portalNeeded = 0;
+				}
+			}
+		}
+		}
+
 	}
 
 	void OnTriggerStay (Collider otherCollider) {

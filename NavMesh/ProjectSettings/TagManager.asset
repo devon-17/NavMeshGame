@@ -7,6 +7,7 @@ TagManager:
   - StationOne
   - StationTwo
   - FourStation
+  - Pad
   layers:
   - Default
   - TransparentFX
