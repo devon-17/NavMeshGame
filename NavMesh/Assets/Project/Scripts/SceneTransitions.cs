@@ -4,29 +4,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
-{   
+{
 
-    public void Tutorial(){
+    public void Tutorial()
+    {
         SceneManager.LoadScene("Tutorial");
         Debug.Log("Tutorial Level");
     }
 
-    public void Menu(){
+    public void Menu()
+    {
         SceneManager.LoadScene("Menu");
     }
 
-    public void MapOne(){
+    public void MapOne()
+    {
         SceneManager.LoadScene("MapOne");
     }
 
-    public void MapTwo(){
+    public void MapTwo()
+    {
         SceneManager.LoadScene("MapTwo");
     }
-    public void MapThree(){
+    public void MapThree()
+    {
         SceneManager.LoadScene("MapThree");
     }
 
-    public void MapFour(){
+    public void MapFour()
+    {
         SceneManager.LoadScene("MapFour");
     }
 
@@ -36,7 +42,8 @@ public class SceneTransitions : MonoBehaviour
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Menu");
     }
-    public void Quit(){
+    public void Quit()
+    {
         Application.Quit();
         Debug.Log("Quit Game");
     }
