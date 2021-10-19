@@ -7,15 +7,15 @@ public class Player : MonoBehaviour
 {
     [Header("Mining")]
     public float miningDuration = 0.5f;
+    private float miningTimer;
+    public int minerals;
 
     [Header("Audio")]
     public AudioSource moveSound;
     public AudioSource mineSound;
     public AudioSource activateSound;
-
     private NavMeshAgent agent;
-    private float miningTimer;
-    public int minerals;
+
     public int Minerals { get { return minerals; } }
 
     [Header("Satellite Instantiate Stats")]
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     [Header("Idle Miner")]
     public GameObject idleMiner;
-    public int idleMinerCost = 20;
+    public int idleMinerCost;
 
 
     // Use this for initialization
@@ -91,10 +91,13 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(minerals >= idleMinerCost){
-            if(Input.GetKeyDown(KeyCode.Space)){
+        if (minerals >= idleMinerCost)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
                 Instantiate(idleMiner, transform.position, Quaternion.identity);
                 minerals -= idleMinerCost;
+                idleMinerCost += 3;
             }
         }
 

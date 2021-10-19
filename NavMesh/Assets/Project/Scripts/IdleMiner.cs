@@ -23,16 +23,17 @@ public class IdleMiner : MonoBehaviour
         IdleMineTimer();
     }
 
-    public void IdleMineTimer(){
+    public void IdleMineTimer()
+    {
 
         timeBetween -= Time.deltaTime;
 
-        if(timeBetween <= 0){
+        if (timeBetween <= 0)
+        {
             player.minerals++;
             timeBetween = startTime;
-            player.idleMinerCost += 5;
         }
-        
+
 
     }
 }
