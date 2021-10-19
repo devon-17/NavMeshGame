@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6027,6 +6027,12 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1066862805}
+    - target: {fileID: 6283380180280567012, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c,
+        type: 3}
+      propertyPath: idleMiner
+      value: 
+      objectReference: {fileID: 8306404603512437933, guid: 350bad13648a0f34fa3e9c4f1485e4ad,
+        type: 3}
     - target: {fileID: 6283380180280567012, guid: 4b45c6dc955d1fb4e95ae7ad5c057d7c,
         type: 3}
       propertyPath: satellite

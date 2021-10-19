@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
     private NavMeshAgent agent;
     private float miningTimer;
-    private int minerals;
+    public int minerals;
     public int Minerals { get { return minerals; } }
 
     [Header("Satellite Instantiate Stats")]
@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
     public int portalNeeded;
     public int portalMineralsNeded;
 
+    [Header("Idle Miner")]
+    public GameObject idleMiner;
+    public int idleMinerCost = 20;
 
 
     // Use this for initialization
@@ -85,6 +88,13 @@ public class Player : MonoBehaviour
                 {
                     portalNeeded = 0;
                 }
+            }
+        }
+
+        if(minerals >= idleMinerCost){
+            if(Input.GetKeyDown(KeyCode.Space)){
+                Instantiate(idleMiner, transform.position, Quaternion.identity);
+                minerals -= idleMinerCost;
             }
         }
 
