@@ -81,9 +81,11 @@ public class GameSceneController : MonoBehaviour
         gameCamera.target = skyCam;
         yield return new WaitForSeconds(2.5f);
         // back to player
-        messageText.text = "Click 'G' to skip Tutorial Routine";
+        messageText.text = "Hold 'Tab' to see the cost of items";
         gameCamera.target = player.gameObject;
         yield return new WaitForSeconds(2f);
+        messageText.text = "Click 'G' to skip the cutscene";
+        yield return new WaitForSeconds(2.5f);
         messageText.text = "";
 
     }

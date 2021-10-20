@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,6 @@ public class GameCamera : MonoBehaviour
 
     public Transform playerTarget;
     public float degrees;
-
     private Vector3 targetPosition;
 
     // Use this for initialization
