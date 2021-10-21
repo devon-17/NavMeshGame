@@ -30,8 +30,8 @@ public class IdleMiner : MonoBehaviour
 
         if (timeBetween <= 0)
         {
-            player.minerals++; // add one minerals every two seconds
-            timeBetween = startTime; // set time to two
+            player.minerals++;
+            timeBetween = startTime;
         }
     }
 }
