@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
     [Header("Idle Miner")]
     public GameObject idleMiner;
     public int idleMinerCost;
-
 
     // Use this for initialization
     void Start()
