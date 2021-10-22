@@ -31,27 +31,33 @@ public class Player : MonoBehaviour
     [Header("Idle Miner")]
     public GameObject idleMiner;
     public int idleMinerCost;
+    GameSceneController gameSceneController;
 
     // Use this for initialization
     void Start()
     {
         agent = gameObject.GetComponent<NavMeshAgent>();
+        gameSceneController = FindObjectOfType<GameSceneController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (gameSceneController.isRunning == false)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
+            if (Input.GetMouseButtonDown(0))
             {
-                agent.SetDestination(hit.point);
-                moveSound.Play();
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    agent.SetDestination(hit.point);
+                    moveSound.Play();
+                }
             }
         }
+
 
         // Make the mining timer work.
         miningTimer -= Time.deltaTime;

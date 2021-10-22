@@ -17,7 +17,7 @@ public class GameSceneController : MonoBehaviour
     private IEnumerator coroutine;
     public GameObject skyCam;
     public GameObject buyMenu;
-
+    public bool isRunning = false;
 
     // Use this for initialization
     void Start()
@@ -33,35 +33,44 @@ public class GameSceneController : MonoBehaviour
     {
         mineralsText.text = "Minerals: " + player.Minerals;
 
-        if (Input.GetKey(KeyCode.G))
+        if (isRunning == true)
         {
-            StopCoroutine(coroutine);
-            gameCamera.target = player.gameObject;
-            messageText.text = "";
-            Debug.Log("Skip Cutscene");
+            if (Input.GetKey(KeyCode.G))
+            {
+                StopCoroutine(coroutine);
+                gameCamera.target = player.gameObject;
+                messageText.text = "";
+                Debug.Log("Skip Cutscene");
+                isRunning = false;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (isRunning == false)
         {
-            gameCamera.target = skyCam.gameObject;
-        }
-        if (Input.GetKeyUp(KeyCode.T))
-        {
-            gameCamera.target = player.gameObject;
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                gameCamera.target = skyCam.gameObject;
+            }
+            if (Input.GetKeyUp(KeyCode.T))
+            {
+                gameCamera.target = player.gameObject;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                buyMenu.SetActive(true);
+            }
+            if (Input.GetKeyUp(KeyCode.Tab))
+            {
+                buyMenu.SetActive(false);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            buyMenu.SetActive(true);
-        }
-        if (Input.GetKeyUp(KeyCode.Tab))
-        {
-            buyMenu.SetActive(false);
-        }
     }
 
     public IEnumerator TutorialRoutine()
     {
+        isRunning = true;
         // starting text
         messageText.text = startingText;
         // first move
@@ -87,7 +96,7 @@ public class GameSceneController : MonoBehaviour
         messageText.text = "Click 'G' to skip the cutscene";
         yield return new WaitForSeconds(2.5f);
         messageText.text = "";
-
+        isRunning = false;
     }
 
 }

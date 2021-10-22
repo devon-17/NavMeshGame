@@ -1394,6 +1394,7 @@ MonoBehaviour:
   startingText: We need to Activate the Space Stations!
   skyCam: {fileID: 1998841445}
   buyMenu: {fileID: 190176778}
+  isRunning: 0
 --- !u!4 &475486415
 Transform:
   m_ObjectHideFlags: 0
